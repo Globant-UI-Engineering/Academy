@@ -1,0 +1,191 @@
+/* Main logo. */
+body > div.extras div.main-title span {
+  font-size: 0.5em;
+  display: block;
+  position:absolute;
+  top: 1.9em;
+  left: 5.5em;
+}
+
+body > div.extras div.main-title {
+  background-image: url("files/watchdog.png");
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: 4em 0.35em;
+  font-size: 5em;
+  font-family: "Baloo", cursive;
+  padding-left: 0.8em;
+}
+
+body > div.extras div.secondary-title span {
+  font-size: 0.5em;
+  display: block;
+  position:absolute;
+  top: 1.9em;
+  left: 4em;
+}
+
+/* Secondary logo. */
+body > div.extras div.secondary-title {
+  font-size: 1.6em;
+  font-family: "Baloo", cursive;
+  transform-origin: 0 50%;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 1em;
+  top:4em;
+}
+
+body > div.extras {
+  order: -1;
+  border-style: solid;
+  border-color: #AAA;
+  border-width: 0 1px 0 1px;
+  position: relative;
+}
+
+body > footer h2 span {
+  color: #b14914;
+}
+
+body > footer {
+  order: -2;
+  background-color: #ecbd3b;
+  border-style: solid;
+  border-color: #AAA;
+  border-width: 1px 1px 0 1px;
+  text-align: right;
+  font-size: 0.8em;
+  padding-right: 1em;
+  text-transform: capitalize;
+}
+
+body > header h1 {
+  text-transform: uppercase;
+  font-size:2.8em;
+  color: #2062ae;
+}
+
+body > header p {
+  font-size: 1.7em;
+}
+
+/* header */
+body > header {
+  border-style: solid;
+  border-color: #AAA;
+  border-width: 0 1px 0 1px;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 0;
+}
+
+body > main > aside {
+  text-align: right;
+}
+
+body > main > div {
+  padding-right: 1em;
+  margin-right: 5em;
+}
+
+/* Main */
+body > main {
+  background-image: url("files/background.jpg");
+  background-repeat: no-repeat;
+  height: 30em;
+  background-position: -8em 9em;
+  border-style: solid;
+  border-color: #AAA;
+  border-width: 0 1px 1px 1px;
+  padding-left: 2em;
+  padding-right: 1em;
+  font-size: 0.7em;
+  display: flex;
+}
+
+body {
+  font-family: "Share", cursive;
+  display: flex;
+  flex-direction: column;
+  width:30em;
+}
+
+div.date {
+  font-size: 0.5em;
+  display: block;
+  position:absolute;
+  top: 11em;
+  left: 9em;
+}
+
+/* Druplicon */
+
+div.druplicon {
+  background-image: url("files/druplicon.png");
+  background-repeat: no-repeat;
+  background-size: 24%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position:absolute;
+  left: 3em;
+  top: -6em;
+  transform: rotate(-30deg);
+}
+.ad-four h1 {
+  color: #b44558;
+  border-top-width: 2px;
+  border-top-color: #587a96;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #587a96;
+  border-bottom-style: solid;
+  text-align:center;
+  font-size: 1.5em;
+  margin-left:4em;
+}
+
+/* Articles */
+
+.ad-one h2 {
+  color: #905d4a;
+  font-size: 1.7em;
+}
+
+.ad-three h1 {
+  color: #98416c;
+  text-transform: uppercase;
+  border-top-width: 2px;
+  border-top-color: #587a96;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #587a96;
+  border-bottom-style: solid;
+  text-align:center;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+.ad-three h2 {
+  color: #518787;
+  line-height: 0;
+}
+
+.ad-three p {
+  padding-left: 12em;
+}
+
+.ad-three {
+  margin-top: -1em;
+}
+
+.ad-two h2 {
+  color: #2a719f;
+  font-size: 1.7em;
+}
+
+.ad-two {
+  margin-top: 2.5em;
+}

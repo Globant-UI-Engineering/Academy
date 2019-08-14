@@ -1,0 +1,160 @@
+</!DOCTYPE html>
+<html>
+<head>
+  <title>Purchase form</title>
+</head>
+<body>
+  <h1>Continue with your purchase</h1>
+  <form method="POST">
+    <fieldset>
+      <legend>Billing information</legend>
+      <p><em>Fields marked with * are mandatory</em></p>
+      <p>
+        <label for="bemail">Email address (*)</label>
+        <input type="email" name="bemail" id="bemail" required />
+      </p>
+      <p>
+        <label for="bfname">First name (*)</label>
+        <input type="text" name="bfname" id="bfname" required />
+      </p>
+      <p>
+        <label for="blname">Last name (*)</label>
+        <input type="text" name="blname" id="blname" required />
+      </p>
+      <p>
+        <label for="bdepartment">Department (*)</label>
+        <select name="bdepartment" id="bdepartment" required>
+          <option value="amz">Amazonas</option>
+          <option value="ant">Antioquia</option>
+          <option value="aru">Arauca</option>
+          <option value="atl">Atlántico</option>
+          <option value="bol">Bolívar</option>
+          <option value="bog">Bogotá D.C.</option>
+          <option value="boy">Boyacá</option>
+          <option value="cal">Caldas</option>
+          <option value="caq">Caquetá</option>
+          <option value="cas">Casanare</option>
+          <option value="cau">Cauca</option>
+          <option value="ces">Cesar</option>
+          <option value="choc">Chocó</option>
+          <option value="cor">Córdoba</option>
+          <option value="cun">Cundinamarca</option>
+          <option value="gua">Guainía</option>
+          <option value="guv">Guaviare</option>
+          <option value="hui">Huila</option>
+          <option value="guj">La guajira' ,
+          <option value="mag">Magdalena</option>
+          <option value="met">Meta</option>
+          <option value="nar">Nariño</option>
+          <option value="nor">Norte De Santander</option>
+          <option value="put">Putumayo</option>
+          <option value="qui">Quindío</option>
+          <option value="ris">Risaralda</option>
+          <option value="sap">San Andrés, Providencia y Santa Catalina</option>
+          <option value="san">Santander</option>
+          <option value="suc">Sucre</option>
+          <option value="tol">Tolima</option>
+          <option value="vac">Valle Del Cauca</option>
+          <option value="vau">Vaupés</option>
+          <option value="vic">Vichada</option>
+        </select>
+      </p>
+      <p>
+        <label for="baddress1">Address line 1 (*)</label>
+        <input type="text" name="baddress1" id="baddress1" required />
+      </p>
+      <p>
+        <label for="baddress2">Address line 2</label>
+        <input type="text" name="baddress2" id="baddress2" />
+      </p>
+      <p>
+        <label for="bphone">Phone</label>
+        <input type="tel" name="bphone" id="bphone" />
+      </p>
+      <p>
+        <label for="bpostal">Postal code</label>
+        <input type="number" name="bpostal" id="bpostal" />
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Shipping information</legend>
+      <p><em>Fields marked with * are mandatory</em></p>
+      <p>
+        <label for="semail">Email address (*)</label>
+        <input type="email" name="semail" id="semail" required />
+      </p>
+      <p>
+        <label for="sfname">First name (*)</label>
+        <input type="text" name="sfname" id="sfname" required />
+      </p>
+      <p>
+        <label for="slname">Last name (*)</label>
+        <input type="text" name="slname" id="slname" required />
+      </p>
+      <p>
+        <label for="sdepartment">Department (*)</label>
+        <select name="sdepartment" id="sdepartment" required>
+          <option value="amz">Amazonas</option>
+          <option value="ant">Antioquia</option>
+          <option value="aru">Arauca</option>
+          <option value="atl">Atlántico</option>
+          <option value="bol">Bolívar</option>
+          <option value="bog">Bogotá D.C.</option>
+          <option value="boy">Boyacá</option>
+          <option value="cal">Caldas</option>
+          <option value="caq">Caquetá</option>
+          <option value="cas">Casanare</option>
+          <option value="cau">Cauca</option>
+          <option value="ces">Cesar</option>
+          <option value="choc">Chocó</option>
+          <option value="cor">Córdoba</option>
+          <option value="cun">Cundinamarca</option>
+          <option value="gua">Guainía</option>
+          <option value="guv">Guaviare</option>
+          <option value="hui">Huila</option>
+          <option value="guj">La guajira' ,
+          <option value="mag">Magdalena</option>
+          <option value="met">Meta</option>
+          <option value="nar">Nariño</option>
+          <option value="nor">Norte De Santander</option>
+          <option value="put">Putumayo</option>
+          <option value="qui">Quindío</option>
+          <option value="ris">Risaralda</option>
+          <option value="sap">San Andrés, Providencia y Santa Catalina</option>
+          <option value="san">Santander</option>
+          <option value="suc">Sucre</option>
+          <option value="tol">Tolima</option>
+          <option value="vac">Valle Del Cauca</option>
+          <option value="vau">Vaupés</option>
+          <option value="vic">Vichada</option>
+        </select>
+      </p>
+      <p>
+        <label for="saddress1">Address line 1 (*)</label>
+        <input type="text" name="saddress1" id="saddress1" required />
+      </p>
+      <p>
+        <label for="saddress2">Address line 2</label>
+        <input type="text" name="saddress2" id="saddress2" />
+      </p>
+      <p>
+        <label for="sphone">Phone</label>
+        <input type="tel" name="sphone" id="sphone" />
+      </p>
+      <p>
+        <label for="spostal">Postal code</label>
+        <input type="number" name="spostal" id="spostal" />
+      </p>
+      <p>
+        <label for="sdeliverytime">Preferred delivery time</label>
+        <input type="time" name="sdeliverytime" id="sdeliverytime" />
+      </p>
+      <p><label for="sinstructions">Additional instructions for delivery</label></p>
+      <textarea name="sinstructions" id="sinstructions" cols="100" rows="10">
+      </textarea>
+    </fieldset>
+    <input type="submit" value="Continue purchase" />
+  </form>
+</body>
+</html>

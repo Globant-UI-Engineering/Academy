@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.up {
+    display: flex;
+    flex-direction: column;
+}
+
+.down {
+    display: flex;
+    height: 35%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.cover {
+    background-image: url('steve.jpg');
+    padding: 10px;
+    width: 723px;
+    height: 1080px;
+    background-size: cover;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ea2c1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    color: #ea2c1e;
+    font-size: 250px;
+    margin: 0;
+    align-self: center;
+    line-height: 0.8em;
+}
+
+.subtitle {
+    align-self: center;
+    font-size: 38px;
+    color: white;
+    margin: 0;
+    line-height: 0.8em;
+}
+
+.new3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end
+}
+
+.new3 h1 {
+    text-align: end;
+    color: white;
+    width: 5em;
+    font-family: sans-serif;
+}
+
+.new3 h1 strong {
+    color: #ea2c1e;
+}
+
+.new2 {
+    color: white;
+}
+
+.new2 h1 {
+    font-family: fantasy;
+    width: 7em;
+    margin: 0;
+}
+
+.new2 p {
+    font-family: monospace;
+    width: 13em;
+    margin: 0;
+}
+
+.new1 h1 {
+    color: white;
+    font-family: sans-serif;
+    width: 4em;
+    font-size: 54px;
+    line-height: 0.8em;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.new1 p {
+    color: white;
+    line-height: 1em;
+    margin: 0;
+    font-size: 20px;
+}
+
+.new1 p span {
+    color: red;
+    font-style: italic;
+    margin: 0;
+}

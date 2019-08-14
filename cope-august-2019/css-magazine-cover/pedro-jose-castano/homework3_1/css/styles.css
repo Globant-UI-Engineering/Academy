@@ -1,0 +1,90 @@
+.container{
+  width: 1024px;
+  height: 768px;
+  overflow:auto;
+  background-image: url('../images/chrismartin.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bg-yellow {
+  background-color: #ebba34;
+}
+article{
+  width: 25vw;
+  
+}
+section{
+  display: flex;
+}
+
+section#top{    
+  justify-content: center;
+}
+
+section#top header{
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow {
+  color: #ebba34;
+}
+
+.title {
+  font-size: 8vw;
+  margin: 0;
+ }
+ 
+ .subtitle {
+   font-size: 1vw;
+   margin-block-start: -1.5vw;
+   align-self: flex-end;
+ }
+
+ .small {
+  font-size: 1vw;
+  padding-block-start: 1.5vw;
+ }
+
+section#medium {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#medium article{
+  margin-block-start: -3vw; 
+}
+
+section#bottom {
+  justify-content: space-between;
+}
+section#left {
+flex-direction: column;
+text-align: left;
+}
+
+section#right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+#right article {
+  margin: 2vw;
+  padding: 0.5vw;  
+}
+
+#left article {
+  margin-inline-start: 2vw;
+  padding: 0.5vw;  
+}
+
+.no-vertical-margin {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
