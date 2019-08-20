@@ -1,0 +1,92 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+form {
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius:3px;
+    padding:5px
+}
+
+section{
+   /* flex-basis:45vw; */
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+button {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border: 1px solid transparent;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+label, .labelClass {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"] {
+    padding:1vw;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    color: #495057;
+    flex-basis:25vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.sectionTitle {
+    padding: 1vw;
+    padding-top:3vw;
+}
+
+.sectionTitle h2 {
+    margin:0px
+}
+
+.divContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    flex-wrap: wrap;
+}
+
+.sendSection {
+    display: flex;
+    justify-content:flex-end;
+    flex-basis:100vw;
+    margin-right: 7vw;
+}
+
+fieldset {
+    display: flex;
+    justify-content:flex-start;
+    flex-basis:24vw;
+    border:0
+}
+
+@media only screen and (max-width: 600px) {
+
+    section, input[type="text"], input[type="date"],label {
+        flex-basis:100vw;
+    }
+
+    fieldset {
+        flex-basis:50vw;
+    }
+
+    label {
+        margin-bottom: 2vh;
+    }
+}
+
+

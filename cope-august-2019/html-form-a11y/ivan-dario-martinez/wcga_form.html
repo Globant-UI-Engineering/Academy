@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Content Accessibility GuideLines Form</title>
+    <meta name="description" content="Example CSS Magazine Cover">
+    <meta name="author" content="ivan.martinez@globant.com">
+
+</head>
+
+<body>
+
+    <fieldset title="Register form">
+
+        <legend>Register form</legend>
+
+        <form id="userDataForm" name="Register form" title="Register form">
+
+            <fieldset>
+                <legend>Personal information</legend>
+
+
+                <label for="inputName">Name (required): </label>
+                <input id="inputName" name="User name" type="Text" placeholder="Enter your name" required>
+
+                <br>
+                <label for="inputLastName">Last Name (required): </label>
+                <input id="inputLastName" name="User last name" type="Text" placeholder="Enter your last name" required>
+
+                <br>
+                <label for="documentType">Document type (required): </label>
+                <select name="Document type" id="documentType" required>
+                    <option value="" selected disabled hidden>Select the type of document</option>
+                    <option value="1" label="social security number">Social security number</option>
+                    <option value="2" label="passport number">Passport number</option>
+                </select>
+
+                <br>
+                <label for="inputDocumentNumber">Document Number (required): </label>
+                <input id="inputDocumentNumber" name="User last name" type="number" min="0" max="99999999999999" placeholder="Enter your document number" required>
+
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+
+                <br>
+                <br>
+                <label for="description">About you: </label>
+                <textarea type="text" name="description" id="description" placeholder="write a short description about you"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>I want to be notified by </legend>
+                <label for="check_email">Email</label>
+                <input type="checkbox" name="email" id="check_email">
+                <label for="check_text_message">Text Message</label>
+                <input type="checkbox" name="text_message" id="check_text_message">
+            </fieldset>
+
+            <br>
+            <label for="saveButton" hidden>Save button </label>
+            <button type="submit" id="saveButton">
+                Save
+            </button>
+        </form>
+    </fieldset>
+
+
+</body>
+
+</html>

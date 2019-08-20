@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#mainContent {
+    width: 20%;
+}
+
+.generalBox {
+    text-align: center;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultBox {
+    text-align: center;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.hbox {
+    display: flex;
+}
+
+#operationsBox {
+    width: 50%;
+}
+
+button {
+    padding: 2px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-align: center;
+}
+
+input {
+    text-align: right;
+}
+
+#result {
+    width: 100%;
+}
+
+.inputLarge {
+    width: 95%;
+}
+
+#valuesBox {
+    text-align: right;
+}

@@ -20,20 +20,20 @@
 		font-size: 5vw;		
 	}
 
-	section.cover-middle .article-box article .title{
+	main.cover-middle .article-box article .title{
 		font-size: 4vw;
 	}
 
-	section.cover-middle .article-box article .img{
+	main.cover-middle .article-box article .img{
 		display: none;
 	}
 
-	section .article-box .double-article{
+	section.article-box .double-article{
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	section .article-box .double-article article{
+	section.article-box .double-article article{
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -41,12 +41,12 @@
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px){
-	section .article-box .double-article article{
+	section.article-box .double-article article{
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	section.cover-middle .article-box article .img{
+	main.cover-middle .article-box article .img{
 		display: none;
 	}
 
@@ -65,26 +65,26 @@
 		justify-content: flex-end;
 	}
 
-	section .article-box .double-article{
+	section.article-box .double-article{
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	section .article-box .double-article article{
+	section.article-box .double-article article{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	section.cover-middle{
+	main.cover-middle{
 		justify-content: flex-end;		
 	}
 
-	section.cover-middle .article-box article .title{
+	main.cover-middle .article-box article .title{
 		font-size: 5vw;
 	}
 
-	section.cover-middle .article-box article .img{
+	main.cover-middle .article-box article .img{
 		display: none;
 	}
 
@@ -143,7 +143,7 @@ body{
 	overflow: hidden;
 }
 
-section{
+section, main{
 	display: flex;
 }
 

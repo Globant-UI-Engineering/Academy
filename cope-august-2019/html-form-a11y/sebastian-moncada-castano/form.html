@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sing up for a basketball team</title>
+</head>
+<body>
+	<header> 
+		<h1>Sing up for a basketball team</h1>
+	</header>
+	<main>
+		<form >
+			<fieldset>
+				<legend><h2>Contact Information</h2></legend>
+				<p>
+					<label for="c_first_name">First Name (*):</label>
+					<input type="text" id="c_first_name" name="first_name" placeholder="Your name.." required>
+				</p>
+
+				<p>
+					<label for="c_last_name">Last Name (*):</label>
+					<input type="text" id="c_last_name" name="last_name" placeholder="Your last name.." required>
+				</p>
+				
+
+				<p>
+					<label for="c_dni">DNI (*):</label>
+					<input type="text" id="c_dni" name="dni" placeholder="Your DNI..." required>
+				</p>
+				
+				<p>
+					<label for="c_birthday">Birthday:</label>
+					<input type="date" id="c_birthday" name="birthday">
+				</p>
+				
+				<p>
+					<label for="c_title">Title :</label>
+					<input type="text" id="c_title" name="title" placeholder="Your title...">
+				</p>
+
+				<p>
+					<label for="c_email">Email address (*):</label>
+					<input type="email" id="c_email" name="email_address" placeholder="Your email..." required>
+				</p>
+
+
+				<fieldset>
+					<legend><h3>EPS</h2></legend>
+						<label for="eps_sura">sura</label>
+						<input type="radio" id="eps_sura" name="eps" value="sura"> 
+						<label for="eps_colmedica">Colmedica</label>
+						<input type="radio" id="eps_colmedica" name="eps" value="colmedica">
+					</fieldset>	
+				</fieldset>
+
+				<fieldset>
+					<legend><h2>Test</h2></legend>
+					<section class="checkboxes-section">
+						<h3>Question 1:</h3>
+						<fieldset>
+							<legend>What team do you want to belong?</legend>
+							<div class="checkbox column">
+								<input id="cavaliers" type="checkbox" name="team" value="cavaliers"/>
+								<label for="cavaliers">Cavaliers</label>
+								<input id="bulls" type="checkbox" name="team" value="bulls"/>
+								<label for="bulls">Bulls</label>
+								<input id="celtics" type="checkbox" name="team" value="celtics"/>
+								<label for="celtics">Celtics</label>
+								<input id="warriors" type="checkbox" name="team" value="warriors"/>
+								<label for="warriors">Warriors</label>
+								<input id="raptors" type="checkbox" name="team" value="raptors"/>
+								<label for="raptors">Raptors</label>
+							</div>
+						</fieldset>
+						<h3>Question 2:</h3>
+						<fieldset>
+							<legend>What position do you play?</legend>
+							<div class="checkbox column">
+								<input id="pg" type="checkbox" name="team" value="cavaliers"/>
+								<label for="pg">PG</label>
+								<input id="sg" type="checkbox" name="team" value="bulls"/>
+								<label for="sg">SG</label>
+								<input id="sf" type="checkbox" name="team" value="celtics"/>
+								<label for="sf">SF</label>
+								<input id="pf" type="checkbox" name="team" value="warriors"/>
+								<label for="pf">PF</label>
+								<input id="c" type="checkbox" name="team" value="raptors"/>
+								<label for="c">C</label>
+							</div>
+						</fieldset>
+					</section>
+				</fieldset>
+
+				<p>
+					<input type="submit" id="submit" name="submit" value="Submit">
+				</p>
+			</form>
+		</main>
+	</body>
+	</html>

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+     <meta charset="ISO-8859-1"> 
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main >
+        <div class="inputContainer">
+                <h3>Calculator</h3>  
+            <div class="result">
+                <input type="text" name="input_result" id="input_result" value="" disabled>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(1)">1</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(2)">2</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(3)">3</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue('/')">/</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(4)">4</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(5)">5</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(6)">6</button>
+            </div>
+            <div class="col">
+               <button onclick="cal.loadValue('*')">*</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(7)">7</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(8)">8</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(9)">9</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue('+')">+</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue('CE')">CE</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue(0)">0</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue('=')">=</button>
+            </div>
+            <div class="col">
+                <button onclick="cal.loadValue('-')">-</button>
+            </div>
+        </div>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

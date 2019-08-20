@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js Calculator</title>
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="author" content="ivan.martinez@globant.com">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+    <div id="mainContent" class="generalBox">
+        <fieldset title="Calculator">
+            <legend>JavaScript Calculator</legend>
+            <form id="values" name="valuesForm" title="Values form">
+                <fieldset>
+                    <div class="hbox generalBox">
+                        <div>
+                            <input id="operation" title="Operation" name="Operation" type="Text" size="1" disabled>
+                        </div>
+                        <div id="valuesBox">
+                            <input id="valueA" class="inputLarge" title="First value" name="valueA" type="number" placeholder="Enter the first value" required>
+                            <input id="valueB" class="inputLarge" title="Second value" name="valueA" type="number" placeholder="Enter the second value" required>
+                        </div>
+                    </div>
+                    <div class="resultBox">
+                        <input id="result" name="result" type="number" placeholder="Result" disabled>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Operations</legend>
+                    <div class="vbox generalBox">
+                        <button type="button" title="Sum" id="sum" value="+" onclick="clickOperationButton(this.value);">+</button>
+                        <button type="button" title="Subtraction" id="subtraction" value="-" onclick="clickOperationButton(this.value);">-</button>
+                        <button type="button" title="Multiplication" id="multiplication" value="*" onclick="clickOperationButton(this.value);">*</button>
+                        <button type="button" title="Division" id="division" value="/" onclick="clickOperationButton(this.value);">/</button>
+                        <button type="button" title="Execute" id="execute" onclick="operate();">=</button>
+                    </div>
+                </fieldset>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <header>
+       <h1> Main Form </h1>
+    </header>
+    <main>
+        <form>
+            <section>
+                <div class="sectionTitle">
+                    <h2>Personal Information</h2>
+                    <hr>
+                </div>
+                <div class="divContainer">
+                    <label for="input_name">Name </label>
+                    <input type="text" name="input_name" id="input_name" placeholder="Name" required>
+                </div>
+                <div class="divContainer">
+                    <label for="input_lastname">Last name</label>
+                    <input type="text" name="input_lastname" id="input_lastname" placeholder="Last name" required>
+                </div>
+                <div class="divContainer">
+                        <div class="labelClass">Sex</div>
+                        <fieldset>
+                            <label for="input_sex_male">Male </label>
+                            <input type="radio" id="input_sex_male" name="input_sex" required value=1>
+                            <label for="input_sex_female">Female </label>
+                            <input type="radio" id="input_sex_female" name="input_sex" required value=2>
+                        </fieldset>
+                </div>
+                <div class="divContainer">
+                    <label for="input_dob">Birth Date</label>
+                    <input type="date" name="input_dob" id="input_dob" placeholder="Birth Date" required>
+                </div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h2>Contact Information</h2>
+                <hr>
+                </div>
+                <div class="divContainer">
+                    <label for="input_address">Address</label>
+                    <input type="text" name="input_address" id="input_address" placeholder="Address">
+                </div>
+                <div class="divContainer">
+                    <label for="input_phone">Phone number</label>
+                    <input type="text" name="input_phone" id="input_phone" placeholder="Phone number">
+                </div>
+                <div class="divContainer">
+                        <label for="input_email">Email</label>
+                        <input type="text" name="input_email" id="input_email" placeholder="Email" required>
+                </div>
+            </section>
+            <section class="sendSection">
+                <button>Guardar</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

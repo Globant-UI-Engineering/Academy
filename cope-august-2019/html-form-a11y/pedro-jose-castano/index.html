@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Request a Demo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Request a Demo right now with no obligation</h1>
+        <form action="" name="request_demo">
+                <fieldset>
+                    <legend>Contact information:</legend>
+                        <label for=firstname>First name*:</label>
+                        <input type=text id="firstname" required>
+                        <label for=lastname>Last name*:</label>
+                        <input type=text id="lastname" required>
+                        <label for=email>Email*:</label>
+                        <input type=email id="email" required>
+                        <label for=phonenumber>Phone number:</label>
+                        <input type=text id="phonenumber">
+                </fieldset>
+                <fieldset>
+                    <legend>Company information:</legend>
+                    <label for=company>Company name*:</label>
+                    <input type=text id="company" required>
+                    <label for="role"> Role In Company:</label>
+                    <select id="role" name="select" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="1">Client Relationship Manager</option>
+                        <option value="2">Engineer</option>
+                        <option value="3">Marketing Assistant</option>
+                    </select>
+                    <p>Location:*</p>
+                    <input id="usa" type="radio" name="location" value="Usa" required>
+                    <label for="usa">USA</label><br>
+                    <input id="international" type="radio" name="location" value="Outside USA">
+                    <label for="international">Outside USA</label><br>
+                </fieldset>
+                <input type="submit" aria-label="Send" value="Send" >
+        </form>
+    </body>
+</html>
