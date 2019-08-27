@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="js/calculator.js" ></script>
+    <script src="js/events.js" ></script>
+    <title>JS Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="calc-wrap">
+            <div class="calc-display">
+                <input type="text" id="mini-display" readonly>
+                <input type="text" id="display" placeholder="0" readonly>
+            </div>
+            <div class="calc-pad">
+                <div class="calc-nums">
+                    <div class="calc-nums-row">
+                        <input type="button" id="btn-7" class="calc-btn calc-num" value="7">
+                        <input type="button" id="btn-8" class="calc-btn calc-num" value="8">
+                        <input type="button" id="btn-9" class="calc-btn calc-num" value="9">
+                    </div>
+                    <div class="calc-nums-row">
+                        <input type="button" id="btn-4" class="calc-btn calc-num" value="4">
+                        <input type="button" id="btn-5" class="calc-btn calc-num" value="5">
+                        <input type="button" id="btn-6" class="calc-btn calc-num" value="6">
+                    </div>
+                    <div class="calc-nums-row">
+                        <input type="button" id="btn-1" class="calc-btn calc-num" value="1">
+                        <input type="button" id="btn-2" class="calc-btn calc-num" value="2">
+                        <input type="button" id="btn-3" class="calc-btn calc-num" value="3">
+                    </div>
+                    <div class="calc-nums-row">
+                        <input type="button" id="btn-0" class="calc-btn calc-num" value="0">
+                        <input type="button" id="btn-clean" class="calc-btn" value="c">
+                        <input type="button" id="btn-equal" class="calc-btn" value="=">
+                    </div>
+                </div>
+                <div class="calc-operations">
+                    <input type="button" id="btn-sum"  class="calc-btn calc-operation" value="+">
+                    <input type="button" id="btn-subtract" class="calc-btn calc-operation" value="-">
+                    <input type="button" id="btn-multiply" class="calc-btn calc-operation" value="*">
+                    <input type="button" id="btn-divide" class="calc-btn calc-operation" value="/">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

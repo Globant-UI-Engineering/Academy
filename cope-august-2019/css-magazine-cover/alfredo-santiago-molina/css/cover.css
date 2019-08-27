@@ -1,0 +1,276 @@
+@font-face {
+    font-family: nintender;
+    src: url(Nintender.ttf);
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+	section.cover-top .title{
+		font-size: 3vw;		
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+	section.cover-top .title{
+		font-size: 5vw;		
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {	
+	section.cover-top .title{
+		font-size: 5vw;		
+	}
+
+	main.cover-middle .article-box article .title{
+		font-size: 4vw;
+	}
+
+	main.cover-middle .article-box article .img{
+		display: none;
+	}
+
+	section.article-box .double-article{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	section.article-box .double-article article{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px){
+	section.article-box .double-article article{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	main.cover-middle .article-box article .img{
+		display: none;
+	}
+
+	section.cover-bottom .corner{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	section.cover-top .title{
+		font-size: 10vw;		
+		border: 2vw solid red;	  
+	}
+
+	section.cover-top{	
+		justify-content: flex-end;
+	}
+
+	section.article-box .double-article{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	section.article-box .double-article article{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	main.cover-middle{
+		justify-content: flex-end;		
+	}
+
+	main.cover-middle .article-box article .title{
+		font-size: 5vw;
+	}
+
+	main.cover-middle .article-box article .img{
+		display: none;
+	}
+
+	section.cover-bottom .address{
+		margin: 0;
+		padding: 0.5vw;
+	}
+
+	section.cover-bottom .corner{
+		display: none;
+	}
+}
+
+/* general */
+
+html,body{
+    padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	display: flex;	
+	min-height: 100vh;
+	background: #ccc;
+	justify-content: center;
+	align-items: center;
+}
+
+.yellow{
+	color: gold;
+}
+
+.red{
+	color: crimson;
+}
+
+.white{
+	color: white;
+}
+
+/* Cover */
+
+#cover{		
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 1vw 1vw 1vw grey;
+	margin: 3vw;
+	width: 1200px;
+	height: 600px;	
+    background-image: url('../img/zelda-botw-bg.jpg');
+	background-size: cover;
+	background-position: right;
+	position: relative;
+	overflow: hidden;
+}
+
+section, main{
+	display: flex;
+}
+
+/* Cover top */
+
+.cover-top{	
+	justify-content: flex-start;
+}
+
+.cover-top .title{
+	margin: 1vw;
+	width: fit-content;
+	font-family: nintender;
+	color:red;
+	border: 1vw solid red;
+	padding: 1vw 2vw;
+	-moz-border-radius: 10vw;
+    -webkit-border-radius: 10vw;
+	border-radius: 10vw;
+	background-color: white;
+}
+
+
+/* Cover middle */
+
+.cover-middle{	
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-grow: 2;
+}
+
+.article-box{
+	align-self:flex-start;	
+	margin: 0 1vw;
+	flex-basis: 37%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.article-box .double-article{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* article */
+
+.article-box article{
+	padding: 1vw;
+}
+
+.article-box article .title{
+	font-size: 2vw;
+	margin: 0;
+	text-shadow: 1px 1px #000;
+}
+
+.article-box article p{
+	color: white;
+	margin: 0;
+}
+
+.img-wrapper{
+	text-align: center;
+}
+
+.article-box article .img{
+	width: 7vw;
+	background-color: white;
+    border-radius: 50%;
+}
+
+.article-box article .page{
+	font-style: italic;
+}
+
+.article-box .double-article article{	
+	flex-direction: column;
+	align-items: center;
+}
+
+/* cover bottom */
+.cover-bottom{	
+	justify-content: space-between;
+} 
+
+.cover-bottom .address{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: nintender;
+	font-style: normal;
+	align-self: flex-end;
+	margin: 0 0.5vw;
+	padding: 0.5vw;
+}
+
+.cover-bottom .corner{
+	align-self: flex-end;	
+	position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cover-bottom .corner header{
+	position: absolute;
+	z-index: 2;
+	text-align: right;
+	top: -5vw;
+    right: 1vw;
+}
+
+.cover-bottom .corner header h2{
+	margin: 0;
+	text-shadow: 2px 2px #000;
+}
+
+.cover-bottom .corner .label{	
+    background-color: crimson;
+    position: absolute;
+    bottom: -155%;
+    z-index: 1;
+    right: -90%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    height: 35vw;
+    width: 35vw;
+}
+.cover-bottom .corner .corner-img{
+	width: 20vw;	
+	position: relative;
+	z-index: 2;
+}
