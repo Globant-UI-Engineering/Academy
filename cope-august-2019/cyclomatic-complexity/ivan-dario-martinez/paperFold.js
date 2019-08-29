@@ -1,3 +1,4 @@
+//Ivan Martinez
 function* paperFold() {
     var array = [1];
     var totalArray = [];

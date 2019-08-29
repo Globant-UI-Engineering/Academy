@@ -1,6 +1,8 @@
 import React from 'react';
 import "./styles.css";
 
+//Ivan Martinez
+
 const list = ({ items }) => {
 
     return (

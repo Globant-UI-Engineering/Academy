@@ -1,3 +1,4 @@
+//Ivan Martinez
 function unluckyDays(year) {
     var total = 0;
     for (i = 1; i < 13; i++) {

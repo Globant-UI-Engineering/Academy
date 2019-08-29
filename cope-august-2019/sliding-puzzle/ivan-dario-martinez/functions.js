@@ -1,3 +1,4 @@
+//Ivan Martinez
 function cellClick(x, y) {
     var clickedCont = document.getElementById("cont" + (x) + (y))
     var elements = [

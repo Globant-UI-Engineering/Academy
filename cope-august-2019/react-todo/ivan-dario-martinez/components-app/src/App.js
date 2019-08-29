@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import List from './Components/List/List';
 
+//Ivan Martinez
+
 let todoList = ['Create React.js project ',
                 'Make todo list',
                 'Add functions to append elements',

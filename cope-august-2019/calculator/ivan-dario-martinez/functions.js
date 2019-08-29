@@ -1,5 +1,5 @@
 var operationType = "";
-
+//Ivan Martinez
 function operate() {
     var res = 0;
     var a = Number(document.getElementById("valueA").value);
