@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    position: absolute;
+    width: 99%;
+    height: 95%;
+    background-size: cover;
+    font-size: 16px;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+aside>form {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background: #FF851B;
+    border-radius: 9px 9px 1px 1px;
+    box-shadow: 0 5px 0 5px #e86b00;
+    display: flex;
+    border-width: 0 0 0 15px;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    justify-content: space-around;
+    padding: 11px 8px 20px 8px;
+    flex-flow: wrap row;
+}
+
+figure {
+    position: absolute;
+    background: #0000000d;
+    border-radius: 9px 9px 1px 1px;
+    box-shadow: 0 -5px 0 5px #e86b00;
+    display: inline-block;
+    height: 391px;
+    align-self: flex-end;
+    width: 383px;
+    margin: 0;
+}
+
+article>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+article>div>button {
+    width: 80%;
+    height: 80%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #28B62C;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0 3px #23a127;
+}
+
+article>div>button:hover {
+    background-color: #51b954
+}
+
+article>div>button:active {
+    background-color: #1f8c22;
+    box-shadow: 0px 3px 0 3px #19751d;
+    transform: translateY(4px);
+}
+
+form {
+    border: solid;
+    border-width: 3px;
+    border-radius: 0.5em;
+    border-color: #FF851B;
+    padding: 0.5em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+button[type=submit] {
+    border-radius: 4px;
+    outline: none;
+    background-color: #28B62C;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button[type=submit] span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button[type=submit] span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button[type=submit]:hover span {
+    padding-right: 25px;
+}
+
+button[type=submit]:hover span:after {
+    opacity: 1;
+    right: 0;
+}
