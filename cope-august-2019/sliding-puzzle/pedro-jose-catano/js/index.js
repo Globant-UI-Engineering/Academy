@@ -17,9 +17,9 @@ var slidingPuzzle = {
      * @return {undefined} 
      */
     init : function init() {
-        var blocks = document.querySelectorAll('.blocks', '#table');
-        for (let block of blocks) {
-            block.onclick = () => clickBlock(parseInt(block.getAttribute("data-row")), parseInt(block.getAttribute("data-column"))); 
+        var tiles = document.querySelectorAll('.tile', '#table');
+        for (let tile of tiles) {
+            tile.onclick = () => clickBlock(parseInt(tile.getAttribute("data-row")), parseInt(tile.getAttribute("data-column"))); 
         }
         
         this.startPuzzle();
@@ -54,7 +54,7 @@ adjacentBlocks: function* adjacentBlocks(row, column) {
  * @param {Number} column The column where the block is
  */
 isValidBlock: function isValidBlock(row, column) {
-    let pattern = /^([1-3])$/;
+    const pattern = /^([1-3])$/;
     return pattern.test(row) && pattern.test(column) ;
 },
 
@@ -123,7 +123,11 @@ addClickEventListener: function addClickEventListener(block) {
     if (block.className === "emptyBlock") {
         block.onclick = null;
     } else {
-        block.onclick = () => this.clickBlock(parseInt(block.getAttribute("data-row")), parseInt(block.getAttribute("data-column"))); 
+        block.onclick = () => {
+			return this.clickBlock(
+			    parseInt(block.getAttribute("data-row")), 
+			    parseInt(block.getAttribute("data-column"))
+			)}; 
     }  
 },
 
