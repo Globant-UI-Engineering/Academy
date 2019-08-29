@@ -1,20 +1,19 @@
 //Ivan Martinez
 function* paperFold() {
-    var array = [1];
-    var totalArray = [];
-    for (var i = 0; i < 19; i++) {
-        totalArray = [];
-        for (var x = array.length; x > 0; x--) {
-            if (array[x - 1] == 1) {
-                totalArray.push(0);
+    let mainArray = [1];
+    for (let i = 0; i < 19; i++) {
+        let itemsToAddArray = [];
+        for (let reverseItem = mainArray.length; reverseItem > 0; reverseItem--) {
+            if (mainArray[reverseItem - 1] == 1) {
+                itemsToAddArray.push(0);
             } else {
-                totalArray.push(1);
+                itemsToAddArray.push(1);
             }
         }
-        array.push(1);
-        array = array.concat(totalArray);
+        mainArray.push(1);
+        mainArray = mainArray.concat(itemsToAddArray);
     }
-    for (var i = 0; i < array.length; i++) {
-        yield array[i];
+    for (let element = 0; element < mainArray.length; element++) {
+        yield mainArray[element];
     }
 }
