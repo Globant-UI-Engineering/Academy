@@ -1,19 +1,19 @@
 //Ivan Martinez
 function cellClick(x, y) {
-    var clickedCont = document.getElementById("cont" + (x) + (y))
-    var elements = [
+    var clickedContainer = document.getElementById("cont" + (x) + (y))
+    var containerElements = [
         document.getElementById("cont" + (x) + (y - 1)),
         document.getElementById("cont" + (x + 1) + (y)),
         document.getElementById("cont" + (x - 1) + (y)),
         document.getElementById("cont" + (x) + (y + 1))
     ];
 
-    containers = elements.filter(element => element != null);
+    containers = containerElements.filter(element => element != null);
 
-    if (clickedCont.getElementsByClassName("cell")[0].id != "cellxx") {
+    if (clickedContainer.getElementsByClassName("cell")[0].id != "cellxx") {
         for (container of containers) {
             if (validate(container)) {
-                swapCells(container, clickedCont);
+                swapCells(container, clickedContainer);
                 break;
             }
         }
@@ -30,14 +30,9 @@ let validate = (cell) => {
     }
 }
 
-/**
- * @param {HTMLObjectElement} containerEmpty  Empty cell
- * @param {HTMLObjectElement} contanierValue  Cell to swap for the empty cell
- */
-
-function swapCells(containerEmpty, contanierValue) {
-    var temp = contanierValue.getElementsByClassName("cell")[0];
-    contanierValue.appendChild(document.getElementById('cellxx'));
+function swapCells(containerEmpty, contanierWithValue) {
+    var temp = contanierWithValue.getElementsByClassName("cell")[0];
+    contanierWithValue.appendChild(document.getElementById('cellxx'));
     containerEmpty.appendChild(temp);
 }
 
