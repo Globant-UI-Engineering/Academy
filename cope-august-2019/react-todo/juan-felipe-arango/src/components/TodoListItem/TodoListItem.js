@@ -1,7 +1,7 @@
 import React from 'react'
 const todoListItem = (props) => {
     return (
-        <p>{props.content}</p>
+        <li>props.content</li>
     )
 }
 

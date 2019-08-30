@@ -21,6 +21,7 @@ class App extends Component {
     return (
       <Fragment>
         <InputComponent changed={this.inputChangedHandler}/>
+        <hr className={classes.HorizontalLine}/>
         <TodoList items={this.state.todoListItems}/>
       </Fragment>
     );

@@ -1,7 +1,10 @@
 import React from 'react'
+import classes from './InputComponent.module.css'
 const inputComponent = (props) => {
     return (
-        <input onKeyUp={(event) => props.changed(event)}/>
+        <div className={classes.inputComponent}>
+            <input onKeyUp={(event) => props.changed(event)}/>
+        </div>
     )
 }
 
