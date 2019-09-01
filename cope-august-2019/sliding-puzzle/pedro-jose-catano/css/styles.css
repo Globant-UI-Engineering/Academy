@@ -1,0 +1,108 @@
+    
+    #table {
+      display: table;
+    }
+    .row{
+      display: table-row;
+    }
+
+    .row div {
+      display: table-cell;
+    }
+
+    .tile {
+      display: table-cell;
+      width: 120px;
+      height: 120px;
+      border: 1px solid white;
+      background: url(../images/kaleidoscope.jpg); 
+      background-size: 360px 360px;
+      cursor: pointer;
+    }
+
+    body, html {
+      height: 100%;
+      display: grid;
+    }
+
+    body {
+      background-image: url('../images/cpbackground.jpg');
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+
+    .main-container {
+      margin: auto;
+    }
+    
+    .piece1 {background-position: left top;}
+    .piece2 {background-position: center top;}
+    .piece3 {background-position: right top;}
+    .piece4 {background-position: left center;}
+    .piece5 {background-position: center center;}
+    .piece6 {background-position: right center;}
+    .piece7 {background-position: left bottom;}
+    .piece8 {background-position: center bottom;}
+    .emptyBlock {background: white; cursor: default;}
+
+    .boyCloud {
+      position: fixed;
+      top: -1.5em;
+      left: 6em;
+      width: 156px;
+      height: 172px;
+      background: url(../images/boyCloud.png);
+      animation: circle 5s reverse linear infinite;
+  }
+
+  .saturn {
+    width: 156px;
+    height: 172px;
+    background: url(../images/saturn.png);
+    position: fixed;
+    top: 0.5em;
+    right: 6em;
+    animation: circle 6s linear infinite;
+  }
+
+  a { 
+    display:block; 
+    opacity:0.8; 
+    -webkit-transition: 0.2s; 
+    transition: 0.2s;
+  }
+
+  .new-game{
+    font-family: 'Crimson Text', serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    line-height: 21px;
+    text-indent: 42px;
+    user-select: none;
+    background: url(../images/newgame.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 1.5em;
+    margin-left: 6em;
+    margin-top: 0.5em;
+    cursor: pointer;
+  }
+
+  a:hover {
+    opacity:1; 
+}
+
+@keyframes circle {
+  from { transform: rotate(0deg)
+                    translate(-8px)
+                    rotate(0deg);
+  }
+  to {   transform: rotate(360deg)
+                    translate(-10px) 
+                    rotate(-360deg);
+  }
+}
+    
