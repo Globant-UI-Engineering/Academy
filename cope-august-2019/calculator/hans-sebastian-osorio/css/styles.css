@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+}
+body {
+	display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+main {
+    width: 20em;
+    align-self: center;
+    color: white;
+}
+input#currentoperators, input#currentresult {
+    padding: 0px 10px 0px 0px;
+    width: 84%;
+    border-width: 0px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    height: 3em;
+    text-align: right;
+}
+
+input:nth-child(n+3) {
+    width: 5em;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    text-align: center;
+    align-self: center;
+    height: 5em;
+}
+.lateralright {
+    background-color: darkorange;
+    color: white;
+}
+.lateral {
+    background-color: lightgrey;
+    color: black;
+}
+
+#cero {
+    width: 137.5px;
+}
