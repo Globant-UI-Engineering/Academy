@@ -1,0 +1,92 @@
+* {
+    text-transform: uppercase;
+    font-family: "Code Pro Regular", Helvetia, sans-serif;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0px;
+}
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    width: 100%;
+}
+header h1 {
+    color: red;
+    font-family: "Code Pro Regular", Helvetia, sans-serif;
+    font-size: 16.631vw;
+    text-align: center;
+    margin-top: -5px;    
+    font-weight: 900;
+}
+header h2 {
+    color: red;
+    font-family: "Code Pro Regular", Helvetia, sans-serif;
+    font-size: 1vw;
+    text-align: right;
+    margin-top: -5px;
+    text-transform: uppercase;
+}
+main {
+    display: flex;
+}
+section{
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    display: flex;
+    width: 100%;
+}
+article:first-child {
+    white-space: pre-line;
+}
+article:first-child span{
+    margin-left: 10px;
+}
+article:first-child span:first-child{
+    display: inline-flex;
+}
+article:last-child  {
+    white-space: pre-line;
+    text-align: right;
+}
+article:last-child span {
+    margin-right: 10px;
+}
+.colorwhi {
+    color: white;
+}
+.coloryel {
+    color: yellow;
+}
+.colorred {
+    color: red;
+}
+.bgcover{
+    object-fit:cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.bgcover img {
+    width: 100%;
+}
+#triangle-up {
+    width: 60px;
+    height: 50px;
+    background: white;
+    position: relative;
+}
+#triangle-up:before {
+    content: "";
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 30px solid white;
+    border-left: 30px solid #424242;
+    border-right: 30px solid #424242;
+}
