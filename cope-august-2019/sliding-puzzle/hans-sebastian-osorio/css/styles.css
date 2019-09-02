@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+    width: 50%;
+}
+span {
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 2px solid black;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.cell:nth-child(odd){
+    background-color: darkgray;
+    color: white;
+}
