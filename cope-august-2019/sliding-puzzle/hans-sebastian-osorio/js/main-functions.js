@@ -1,36 +1,34 @@
-/**
- * INITIALIZE board and minimum configurations
- */
 
 let rowbox = 3; //This must be more than 4, 9, 16, 25
 const s = new Set()
-let main = document.getElementById('container-main')
+let mainElement = document.getElementById('container-main')
+var styleCell = document.createElement('style');
+document.head.appendChild(styleCell);
 let unique = Math.ceil(Math.random() * (rowbox * rowbox))
-for (let index = 0; index < (rowbox * rowbox); index++) {
-    // Create unique numbers, or no repeat numbers in set collection
-    while (s.has(unique)) {
-        unique = Math.ceil(Math.random() * (rowbox * rowbox))
-    }
-    s.add(unique)
 
-    // Create input element
-    var input = document.createElement("span")
-    //input.type = "text"
-    input.className = "cell"
-    input.id = "cell" + index
-    input.value = ( ( rowbox * rowbox ) === unique ) ? '' : unique // This is no repeat number
-    input.textContent = ( ( rowbox * rowbox ) === unique ) ? '' : unique // This is no repeat number
-    //input.disabled = true
-    main.append(input)
+const initBoard = () => {
+    rowbox = parseInt(document.getElementById("difficulty").value)
+    s.clear()
+    unique = Math.ceil(Math.random() * (rowbox * rowbox))
+    mainElement.innerHTML = ""
+    
+    styleCell.innerHTML = '.cell { width: ' + ((100 / rowbox) - 1) + '%; }'
+    
+    for (let index = 0; index < (rowbox * rowbox); index++) {
+        // Create unique numbers, or no repeat numbers in set collection
+        while (s.has(unique)) {
+            unique = Math.ceil(Math.random() * (rowbox * rowbox))
+        }
+        s.add(unique)
+        var input = document.createElement("span")
+        input.className = "cell"
+        input.id = "cell" + index
+        input.value = ( ( rowbox * rowbox ) === unique ) ? '' : unique
+        input.textContent = ( ( rowbox * rowbox ) === unique ) ? '' : unique
+        mainElement.append(input)
+    }
 }
 
-// Set style on board
-var styleCell = document.createElement('style');
-styleCell.innerHTML = '.cell { width: ' + ((100 / rowbox) - 1) + '%; }'
-document.head.appendChild(styleCell);
-
-
-// Adding functions behavior when click
 const changeValue = ( point, newpoint, value ) => {
     document.getElementById('cell' + newpoint).textContent = value
     document.getElementById('cell' + newpoint).value = value
@@ -39,8 +37,13 @@ const changeValue = ( point, newpoint, value ) => {
 }
 
 const moveCell = ( event ) => {
-    if ( event.target.value != "" ) { // Check up, down, left, right if is empty
+    if ( event.target.value != "" ) {
+        
+        
         let cellId = parseInt(event.target.id.substring(4))
+
+        console.log(cellId, rowbox, cellId - rowbox, document.getElementById('cell' + (cellId - rowbox)));
+
 
         // Check LEFT SIDE
         // No left data on left border, so dont check left side. Verify if exist data on left, and verify is empty
@@ -58,7 +61,7 @@ const moveCell = ( event ) => {
         }
         // Check UP SIDE
         // No up data on first row, so dont check up side. Verify if exist data on up, and verify is empty
-        if ( (cellId - rowbox > 0) && 
+        if ( (cellId - rowbox >= 0) && 
             document.getElementById('cell' + (cellId - rowbox)) && 
             document.getElementById('cell' + (cellId - rowbox)).value == '' ) {
             changeValue(cellId, cellId - rowbox, document.getElementById('cell' + cellId).value)
@@ -72,6 +75,5 @@ const moveCell = ( event ) => {
         }
     }
 }
-
-// Adding behavior when click
-main.addEventListener("click", moveCell);
+initBoard();
+mainElement.addEventListener("click", moveCell);

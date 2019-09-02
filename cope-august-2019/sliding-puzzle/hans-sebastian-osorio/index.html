@@ -8,12 +8,18 @@
     </head>
     <body>
         <head>
-            Sliding Puzzle
+            <h1>Sliding Puzzle</h1>
+            <h2>Select difficulty level:</h2>
+            <select name="difficulty" id="difficulty" onchange="initBoard()">
+                <option value="2">Easy</option>
+                <option value="3" selected>More or less</option>
+                <option value="4">Hard</option>
+            </select>
         </head>
         <main id="container-main">
         </main>
         <footer>
-            <p>Please click on numbers.</p>
+            <p>Please click on numbers near blank space.</p>
         </footer>
     </body>
 </html>
