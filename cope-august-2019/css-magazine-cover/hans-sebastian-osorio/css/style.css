@@ -1,0 +1,53 @@
+* {
+    text-transform: uppercase;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0px;
+}
+header{
+    align-self: center;
+}
+header h1{
+    color: red;
+    font-family: "Code Pro Regular", Helvetia, sans-serif;
+    font-size: 16vw;
+    text-align: center;
+    margin-top: -5px;
+    letter-spacing: -8px;
+    transform: scale(1.2, 1.5);
+    font-weight: 900;
+}
+main {
+    display: flex;
+}
+section{
+    justify-content: space-around;
+    flex: 1;
+    text-align: start;
+}
+section:last-child{
+    text-align: end;
+}
+
+p.colorwhi {
+    color: white;
+}
+p.coloryel {
+    color: yellow;
+}
+p.colorred {
+    color: red;
+}
+
+.bgcover{
+    object-fit:cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.bgcover img {
+    width: 100%;
+}
