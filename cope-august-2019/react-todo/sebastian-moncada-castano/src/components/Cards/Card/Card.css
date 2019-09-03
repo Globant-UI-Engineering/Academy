@@ -1,0 +1,78 @@
+.card{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 2px 2px 2px;
+	margin: 4px;
+	background: #FFFFFF;  /* fallback for old browsers */
+	border-radius: 4px 4px 25px 4px;
+	border: 1px solid #C4C4C4;  
+}
+.card-title{
+	display: flex;
+	flex-direction: column;	
+}
+
+.card-body{
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 3px;
+	font-size: 12px;
+}
+
+h3{
+	
+	height: 2px;
+}
+h6{
+	width: 50%;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center
+}
+
+#btn-ok {
+  background-color: #4CAF50; 
+  color: white; 
+  border: 4px solid white;
+  width: 40px;
+  border-radius: 0px 0px 0px 100px
+}
+
+#btn-ok:hover {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+}
+
+
+#btn-cancel {
+  background-color: #FD3553; 
+  color: black; 
+  border: 4px solid white;
+  width: 40px;
+  border-radius: 0px 0px 100px 0px;
+}
+
+#btn-cancel:hover {
+  background-color: white;
+  border: 2px solid #FD3553;
+  color: #FD3553;
+}
+
+#btn-back {
+  background-color:#5DB1D1; 
+  color: white; 
+  border: 4px solid white;
+  width: 40px;
+  border-radius: 0px 0px 0px 100px
+}
+
+#btn-back:hover {
+  background-color: white;
+  border: 2px solid #5DB1D1;
+  color: #4CAF50;
+}
