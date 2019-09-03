@@ -1,0 +1,25 @@
+.addToDoComponent{
+    display: flex;
+    justify-content: center;
+    width:100%
+}
+
+.addToDoComponent div{
+    margin:1%;
+}
+
+.addToDoComponent div:nth-child(1){
+    flex-basis:40%;
+}
+.addToDoComponent div:nth-child(2){
+    flex-basis:10%;
+}
+
+.addToDoComponent input{
+    padding:.7vw;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    color: #495057;
+    width:100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
