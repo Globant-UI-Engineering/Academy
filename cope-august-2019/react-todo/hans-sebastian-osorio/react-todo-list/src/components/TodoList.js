@@ -8,8 +8,8 @@ class TodoList extends React.Component {
    }
    render() {      
        return (
-           <div>
-               <ul>
+            <div className="todolist">
+                <ul>
                    {
                        this.props.updateList.map((item, index) => 
                            <TodoRow item={item} index={index} removeItem={this.props.removeItem}/>
