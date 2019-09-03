@@ -1,0 +1,100 @@
+@font-face {
+font-family:HeyBrights;
+src: url(HeyBrights.ttf);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header{
+  text-align: center;
+  font-family: "Charlie Display",sans-serif;;
+  font-size: 40px;
+  height:  120px;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.input-container{
+  display: flex;
+  margin:10px;
+  height: 350px;
+  width:  200px;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #FFFFFF;  
+}
+
+.cards-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin:10px;
+  padding: 10px;   
+  width:800px;
+  border-radius: 8px;
+  background-color: #DCFFFB;
+  background-color: rgba(220, 255, 251,0.6);
+  border: 1px solid #FFFFFF;  
+}
+
+label{
+  font-family: "Charlie Display",sans-serif;
+  font-size: 20px
+}
+
+
+.input-section{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  width:100%;
+  background: #E0FFFF;  /* fallback for old browsers */
+  border-radius: 7px 7px 7px 7px;
+  border: 2px solid #A9D9F4;  
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+}
+
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  
+  text-decoration: none;
+  
+  cursor: pointer;
+ 
+}
+
+h2{
+  text-align: center;
+  font-family: "Charlie Display",sans-serif;
+  font-size: 25px
+}
