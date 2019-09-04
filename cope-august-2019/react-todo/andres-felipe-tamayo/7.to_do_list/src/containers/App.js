@@ -28,20 +28,16 @@ class App extends Component {
   }
 
   handleStateTask=(position)=>{
-
-      this.setState((prevState)=>{
-        const arrTemp=[...prevState.taskList];
-        arrTemp[position].stateCheckbox=!arrTemp[position].stateCheckbox;
-        return{
-          taskList:arrTemp
-        }
-      })
+    const arrTemp=[...this.state.taskList];
+    const tempObj={...arrTemp[position], state:!arrTemp[position].state};
+    arrTemp[position]=tempObj;
+    this.setState({ taskList:arrTemp});
   }
 
   saveTask(newValue){
     if(newValue!==""){
       this.setState({
-        taskList:[...this.state.taskList,{name:newValue,stateCheckbox:false}]
+        taskList:[...this.state.taskList,{name:newValue,state:false}]
       })
       document.getElementById('input_homework').value="";
     }

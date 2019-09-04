@@ -1,6 +1,7 @@
 import React from 'react';
 import './addTask.css';
-const addTask =(props)=>{
+import PropTypes from 'prop-types';
+const AddTask =(props)=>{
 
     return(
         <div className="addToDoComponent">
@@ -10,4 +11,9 @@ const addTask =(props)=>{
     )
 }
 
-export default addTask;
+AddTask.propTypes ={
+    addhomeworkEnterkey:PropTypes.func,
+    addhomework:PropTypes.func
+}
+
+export default AddTask;

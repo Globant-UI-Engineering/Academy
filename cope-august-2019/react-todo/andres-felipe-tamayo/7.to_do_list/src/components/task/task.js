@@ -1,16 +1,9 @@
-import React,{useEffect} from 'react';
-//import React from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import './task.css';
-
+import PropTypes from 'prop-types';
 const Task =(props)=>{
-
-    useEffect(()=>{
-        //Corre para cualquier ciclo
-      //  console.log('cockpitsss, useEffect');
-        console.log('cockpitsss, useEffect',props.task);
-    });
 
     function toCamelCase(str)  {
 
@@ -29,21 +22,24 @@ const Task =(props)=>{
             <div>
                 <input type="checkbox" onChange={props.changeState}></input>
                 <FontAwesomeIcon icon={faTrashAlt} onClick={props.deleteTask} size="lg" className="icons"/>
-                {!(props.task.stateCheckbox) ? <strong className="colorFail">Pending</strong> : <strong className="colorSucced">Completed</strong>}
+                {!(props.task.state) ? <strong className="colorFail">Pending</strong> : <strong className="colorSucced">Completed</strong>}
             </div>
             <hr></hr>
         </div>
     )
 }
 
-
-function areEqual(prevProps, currentProps) {
-    console.log("1 ",prevProps.task.stateCheckbox);
-    console.log("2 ",currentProps.task.stateCheckbox);
-    // return (prevProps.name === currentProps.name &&
-    // prevProps.stateCheckbox === currentProps.stateCheckbox); 
-    return false;
+Task.propTypes ={
+    index:PropTypes.number,
+    name:PropTypes.string,
+    state:PropTypes.bool,
+    deleteTask:PropTypes.func,
+    changeState:PropTypes.func
 }
 
-
+function areEqual(prevProps, currentProps) {
+    // console.log(prevProps.task, currentProps.task);
+    return (prevProps.task !== currentProps.task)?false:true;
+}
+   
 export default React.memo(Task, areEqual);
