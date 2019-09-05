@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Calculator</title>
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	</script>
-	<![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript Calculator">
-    <meta name="keywords" content="JavaScript, Calculator">
-    <meta name="author" content="Esteban Restrepo">
-	
-	<link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-	<main>
-		<div class="digit">0</diV>
-		<div class="digit">1</diV>
-		<div class="digit">2</diV>
-		<div class="operator">+</diV>
-		<div class="digit">3</diV>
-		<div class="digit">4</diV>
-		<div class="digit">5</diV>
-		<div class="operator">-</diV>
-		<div class="digit">6</diV>
-		<div class="digit">7</diV>
-		<div class="digit">8</diV>
-		<div class="operator">*</diV>
-		<div class="digit">9</diV>
-		<div id="clean" class="operator clean">CE</diV>
-		<div id="equal" class="operator equal">=</diV>
-		<div class="operator">/</diV>
-		<div class="screen"><input id="result" type="text" value="0" readonly /></diV>
-	</main>
-	<footer />
+	<head>
+		<meta charset="UTF-8" />
+		<title>Calculator</title>
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		</script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Javascript Calculator">
+		<meta name="keywords" content="JavaScript, Calculator">
+		<meta name="author" content="Esteban Restrepo">
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1>Javascript Calculator</h1>
+		</header>
+		<main>
+			<button class="operand">0</button>
+			<button class="operand">1</button>
+			<button class="operand">2</button>
+			<button class="operator">+</button>
+			<button class="operand">3</button>
+			<button class="operand">4</button>
+			<button class="operand">5</button>
+			<button class="operator">-</button>
+			<button class="operand">6</button>
+			<button class="operand">7</button>
+			<button class="operand">8</button>
+			<button class="operator">*</button>
+			<button class="operand">9</button>
+			<button id="clean" class="operator clean">CE</button>
+			<button id="equal" class="operator equal">=</button>
+			<button class="operator">/</button>
+			<div class="screen"><input id="display" value="0" type="text" 
+					autocomplete="off"  onkeyup="setValueFromKeyboard(event)"/></diV>
+		</main>
+		<footer />
   </body>
   <script src="calculator.js"></script>
 </html>
