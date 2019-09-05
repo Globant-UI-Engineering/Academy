@@ -1,0 +1,83 @@
+body{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+}
+
+header{
+	height: 20vmin;
+    width: 100vmin;
+    font-size: 4vmin;
+	text-align:center;
+}
+
+
+.operand, .operator{
+	display: flex;
+    justify-content: center;
+	align-items:center;
+    width: 22vmin;
+	margin: 0.5vmin;
+}
+
+
+.operand, .operator, .screen{
+	border-radius: 2vmin;
+}
+
+.operand:hover, .operator:hover{
+	background-color:#d7d9dd;
+	cursor:pointer;
+}
+
+.operand{
+	font-size: 10vmin;
+	background-color: #f3f3f3;
+	
+}
+
+.operator{
+	font-size: 5vmin;
+	font-weight:bold;
+	background-color: #d2d2d2;
+}
+
+.screen{
+	width: 100vmin;
+    margin: 0 5vmin 3vmin 5vmin;
+    height: 10vmin;
+}
+
+.screen input{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 12vmin;
+    border: none;
+	color: transparent;
+    display: inline-block;
+	text-shadow: 0 0 0 black;
+	border-radius:2vmin;
+	border: 2px solid #d7d9dd;
+	padding:0.5vmin 0.2vmin;
+}
+
+.screen input:focus{
+    outline: none;
+	user-select: none;
+	border-color:#4285F4;
+}
+
+.operator.equal{
+	background-color:#4285F4;
+	color:#fff;
+}
+main{
+	display:flex;
+	flex-wrap: wrap-reverse;
+	width: 100vmin;
+	height:75vmin;
+	justify-content: center;
+}
