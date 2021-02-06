@@ -63,6 +63,7 @@ article{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 140px;
 }
 .block-title {
     position: relative;
@@ -84,4 +85,11 @@ article{
 .text{
     line-height: 1em;
     color: #cfcfcf;
+}
+
+h1 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
 }
