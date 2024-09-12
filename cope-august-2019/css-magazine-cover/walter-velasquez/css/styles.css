@@ -11,7 +11,7 @@
 	background-position-x: right;
 }
 
-.title, .footer {
+header {
 	width: 100%;
 	justify-content: center;
 	display: flex;
@@ -49,14 +49,14 @@ h3, h4 {
 	margin: 15%;
 }
 
-.footer {
+footer.footer {
 	background-color: #FF9900;
 	width: 25%;
 	margin: 5%;
-	padding: 0px 10px 20px 10px
+	padding: 10px 15px 10px 15px
 }
 
-footer {
+footer:not(.footer), footer p:last-child {
 	font-style: italic;
 	justify-content: center;
 	text-align: end;
