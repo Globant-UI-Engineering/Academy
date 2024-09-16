@@ -1,0 +1,31 @@
+.task{
+    margin:2%;
+    font-size:.8em;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.task div:nth-child(1){
+  flex-basis:80%;
+}
+
+.task div:nth-child(2){
+    flex-basis:20%;
+} 
+.task hr{
+    color:silver;
+    border-style: solid;
+    border-width:1px;
+    flex-basis:100%;
+}
+
+.task div:nth-child(2) *{
+   margin:0px 7px 0px 7px
+} 
+
+.task div:nth-child(2) strong {
+    flex-basis:80%;
+}
+
+
