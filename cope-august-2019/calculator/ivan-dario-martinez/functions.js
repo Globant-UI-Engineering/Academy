@@ -1,34 +1,33 @@
 var operationType = "";
 //Ivan Martinez
 function operate() {
-    var res = 0;
-    var a = Number(document.getElementById("valueA").value);
-    var b = Number(document.getElementById("valueB").value);
-    if (a != "" && b != "") {
+    let result = 0;
+    let firstValue = Number(document.getElementById("firstValue").value);
+    let secondValue = Number(document.getElementById("secondValue").value);
+    if (firstValue != "" && secondValue != "") {
         switch (this.operationType) {
             case "+":
-                res = a + b
+                result = firstValue + secondValue
                 break;
             case "-":
-                res = a - b
+                result = firstValue - secondValue
                 break;
             case "*":
-                res = a * b
+                result = firstValue * secondValue
                 break;
             case "/":
-                res = a / b
+                result = firstValue / secondValue
                 break;
-
             default:
                 alert("Please select a type of operation");
                 break;
         }
-        document.getElementById("result").value = res;
+        document.getElementById("result").value = result;
     }
 }
 
-function clickOperationButton(param) {
-    this.operationType = param;
+function clickOperationButton(operationType) {
+    this.operationType = operationType;
     document.getElementById("operation").value = this.operationType;
     operate();
 }
